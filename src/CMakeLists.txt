@@ -51,6 +51,6 @@ add_library(pgen_lib pgen_compress.cc
 add_library(others pvar_ffi_support.cc SFMT.c)
 
 # Link header
-target_include_directories(plink2_lib PUBLIC ${CMAKE_SOURCE_DIR}/include)
-target_include_directories(pgen_lib PUBLIC ${CMAKE_SOURCE_DIR}/include)
-target_include_directories(others PUBLIC ${CMAKE_SOURCE_DIR}/include)
+target_include_directories(plink2_lib PUBLIC ${CMAKE_SOURCE_DIR}/include ${CMAKE_SOURCE_DIR})
+target_include_directories(pgen_lib PUBLIC ${CMAKE_SOURCE_DIR}/include ${CMAKE_SOURCE_DIR})
+target_include_directories(others PUBLIC ${CMAKE_SOURCE_DIR}/include ${CMAKE_SOURCE_DIR})
