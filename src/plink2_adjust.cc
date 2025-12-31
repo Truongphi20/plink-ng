@@ -20,13 +20,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "include/plink2_bits.h"
+#include "plink2_bits.h"
 #include "plink2_cmdline.h"
 #include "plink2_compress_stream.h"
 #include "plink2_decompress.h"
-#include "include/plink2_stats.h"
-#include "include/plink2_string.h"
-#include "include/plink2_text.h"
+#include "plink2_stats.h"
+#include "plink2_string.h"
+#include "plink2_text.h"
 
 #ifdef __cplusplus
 namespace plink2 {

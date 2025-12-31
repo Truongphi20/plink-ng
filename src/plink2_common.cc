@@ -20,7 +20,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#include "include/plink2_htable.h"
+#include "plink2_htable.h"
 #include "plink2_compress_stream.h"
 #include "plink2_decompress.h"
 

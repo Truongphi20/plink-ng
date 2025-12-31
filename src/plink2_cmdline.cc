@@ -27,8 +27,8 @@
 #include <time.h>  // time(), ctime()
 #include <unistd.h>  // getcwd(), gethostname(), sysconf(), fstat()
 
-#include "include/plink2_htable.h"
-#include "include/plink2_thread.h"
+#include "plink2_htable.h"
+#include "plink2_thread.h"
 
 #ifdef __cplusplus
 namespace plink2 {

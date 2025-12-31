@@ -27,13 +27,13 @@
 #include <errno.h>
 #include <string.h>
 
-#include "include/pgenlib_misc.h"
-#include "include/pgenlib_read.h"
-#include "include/plink2_base.h"
-#include "include/plink2_bits.h"
-#include "include/plink2_string.h"
-#include "include/plink2_text.h"
-#include "include/plink2_thread.h"
+#include "pgenlib_misc.h"
+#include "pgenlib_read.h"
+#include "plink2_base.h"
+#include "plink2_bits.h"
+#include "plink2_string.h"
+#include "plink2_text.h"
+#include "plink2_thread.h"
 #include "plink2_cmdline.h"
 
 #ifdef __cplusplus

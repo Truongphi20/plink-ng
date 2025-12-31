@@ -26,10 +26,10 @@
 #include <stdarg.h>
 #include <string.h>
 
-#include "include/plink2_base.h"
-#include "include/plink2_bits.h"
-#include "include/plink2_memory.h"
-#include "include/plink2_string.h"
+#include "plink2_base.h"
+#include "plink2_bits.h"
+#include "plink2_memory.h"
+#include "plink2_string.h"
 
 #ifdef _WIN32
 #  define NULL_STREAM_NAME "nul"
