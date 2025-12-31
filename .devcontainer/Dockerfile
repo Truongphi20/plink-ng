@@ -24,6 +24,8 @@ RUN apt-get update && apt-get install -y \
     libopenblas-dev \
     liblapack-dev \
     liblapacke-dev \
+    libzstd-dev \
+    libdeflate-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Build HTSlib
