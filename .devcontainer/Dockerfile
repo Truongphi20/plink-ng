@@ -23,6 +23,7 @@ RUN apt-get update && apt-get install -y \
     libboost-serialization-dev \
     libopenblas-dev \
     liblapack-dev \
+    liblapacke-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Build HTSlib
