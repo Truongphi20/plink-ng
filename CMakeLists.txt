@@ -12,4 +12,4 @@ add_subdirectory(src)
 add_executable(plink2 src/plink2.cc)
 
 # Link libraries
-target_link_libraries(plink2 plink2_lib pgen_lib others)
+target_link_libraries(plink2 plink2_lib pgen_lib others zstd)
