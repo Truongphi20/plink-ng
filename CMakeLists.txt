@@ -5,6 +5,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+set(ZSTD_BUILD_SHARED OFF CACHE BOOL "" FORCE)
+
 add_subdirectory(zstd)
 add_subdirectory(libdeflate)
 add_subdirectory(src)
