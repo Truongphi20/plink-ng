@@ -149,7 +149,7 @@ IF (UNIX)
     SET(LIBDIR "${CMAKE_INSTALL_PREFIX}/lib")
     SET(INCLUDEDIR "${CMAKE_INSTALL_PREFIX}/include")
     SET(VERSION "${LIBVER_MAJOR}.${LIBVER_MINOR}.${LIBVER_RELEASE}")
-    ADD_CUSTOM_TARGET(libzstd.pc ALL
+    ADD_CUSTOM_TARGET(libzstd.pc
             ${CMAKE_COMMAND} -DIN="${LIBRARY_DIR}/libzstd.pc.in" -DOUT="libzstd.pc"
             -DPREFIX="${PREFIX}" -DLIBDIR="${LIBDIR}" -DINCLUDEDIR="${INCLUDEDIR}" -DVERSION="${VERSION}"
             -P "${CMAKE_CURRENT_SOURCE_DIR}/pkgconfig.cmake"
