@@ -15,6 +15,7 @@ add_executable(plink2 src/plink2.cc src/SFMT.c)
 # Link libraries
 find_package(BLAS REQUIRED)
 find_package(Threads REQUIRED)
+find_package(ZLIB REQUIRED)
 
 target_link_libraries(plink2 
     plink2_lib 
@@ -23,6 +24,7 @@ target_link_libraries(plink2
     libdeflate::libdeflate 
     ${BLAS_LIBRARIES} 
     Threads::Threads
+    ZLIB::ZLIB
 )
 
 # Link supplement headers
