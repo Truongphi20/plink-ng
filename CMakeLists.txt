@@ -10,7 +10,7 @@ add_subdirectory(libdeflate)
 add_subdirectory(src)
 
 # Create main exe
-add_executable(plink2 src/plink2.cc)
+add_executable(plink2 src/plink2.cc src/SFMT.c)
 
 # Link libraries
 find_package(BLAS REQUIRED)
@@ -24,3 +24,6 @@ target_link_libraries(plink2
     ${BLAS_LIBRARIES} 
     Threads::Threads
 )
+
+# Link supplement headers
+target_include_directories(plink2 PUBLIC ${CMAKE_SOURCE_DIR}/include)
