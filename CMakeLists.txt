@@ -13,4 +13,14 @@ add_subdirectory(src)
 add_executable(plink2 src/plink2.cc)
 
 # Link libraries
-target_link_libraries(plink2 plink2_lib pgen_lib others zstd libdeflate::libdeflate)
+find_package(BLAS REQUIRED)
+find_package(Threads REQUIRED)
+
+target_link_libraries(plink2 
+    plink2_lib 
+    pgen_lib  
+    zstd 
+    libdeflate::libdeflate 
+    ${BLAS_LIBRARIES} 
+    Threads::Threads
+)
