@@ -11,3 +11,11 @@ pgen_spec/pgen_spec.toc
 /test_data/
 /results/ 
 /venv/
+
+## Ignore build
+build
+
+## Igmore test runs
+*.log
+*.smiss
+*.vmiss
