@@ -14,3 +14,8 @@ pgen_spec/pgen_spec.toc
 
 ## Ignore build
 build
+
+## Igmore test runs
+*.log
+*.smiss
+*.vmiss
